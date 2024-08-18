@@ -118,7 +118,7 @@ const Dashboard = () => {
             component="p"
             sx={{ fontSize: "20px", fontFamily: "Open Sans", fontWeight: 700 }}
           >
-            CNAPP Dashboard
+            CNAPP DashboardDDDD
           </Typography>
           <Box sx={{ display: "flex", marginRight: "25px" }}>
             <Button

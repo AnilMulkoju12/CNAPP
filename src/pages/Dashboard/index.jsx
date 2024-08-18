@@ -94,7 +94,8 @@ const Dashboard = () => {
       <Box
         sx={{
           background: "#f0f5fa",
-          padding: "20px 80px",
+          // padding: "20px 80px",
+          padding:{xxs:"0px 0px",md:"20px 80px",lg:"20px 80px",xl:"20px 80px"},
           // width:'100%',
           height: {
             xs: "100vh",
@@ -116,20 +117,32 @@ const Dashboard = () => {
           <Typography
             variant="p"
             component="p"
-            sx={{ fontSize: "20px", fontFamily: "Open Sans", fontWeight: 700 }}
+            sx={{
+              fontSize: {
+                // xs: "10px",
+                xxs:"15px",
+                md: "20px",
+                sm: "20px",
+                lg: "20px",
+                xl: "20px",
+              },
+              fontFamily: "Open Sans",
+              fontWeight: 700,
+            }}
           >
-            CNAPP DashboardDDDD
+            CNAPP Dashboard
           </Typography>
-          <Box sx={{ display: "flex", marginRight: "25px" }}>
+          <Box sx={{ display: "flex", marginRight:{xxs:"0px",lg:"25px",md:"25px",xl:"25px",sm:"25px" } }}>
             <Button
               variant="contained"
               href="#contained-buttons"
               sx={{
                 background: "#fff",
                 color: "#636e7c",
-                margin: "0px 15px 0px 0px",
-                padding: { xs: "10px" },
-                fontSize: { xs: "10px" },
+                // margin: "0px 15px 0px 0px",
+                marginRight:{xxs:"0px",md:"15px"},
+                padding: { xxs: "5px",md:"10px" },
+                fontSize: { xxs: "10px",md:"14px" },
                 "&:hover": {
                   color: "#fff",
                 },
@@ -382,7 +395,7 @@ const Dashboard = () => {
             sx={{
               position: "absolute",
               right: 0,
-              width: 600,
+              width: {xxs:"300px",md:600,lg:600,xl:600},
               height: "100vh",
               bgcolor: "background.paper",
               boxShadow: 24,
